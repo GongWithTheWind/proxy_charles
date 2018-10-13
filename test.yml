@@ -1,0 +1,14 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 60
+      arrivalRate: 50
+      rampTo: 1000
+    - duration: 60
+      arrivalRate: 1500
+scenarios:
+  - flow:
+      - get:
+          url: '/house/{{ $randomNumber(1, 10000) }}'
+      - get:
+          url: '/house/{{ $randomNumber(10000, 1000000) }}'

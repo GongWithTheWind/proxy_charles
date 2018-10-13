@@ -12,15 +12,20 @@
     "test": "jest"
   },
   "dependencies": {
+    "cors": "^2.8.4",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
+    "express-http-proxy": "^1.4.0",
     "http-proxy-middleware": "^0.19.0",
     "morgan": "^1.9.0",
+    "newrelic": "^4.9.0",
     "nodemon": "^1.18.4",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
+    "artillery": "^1.6.0-24",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "enzyme-to-json": "^3.3.4",

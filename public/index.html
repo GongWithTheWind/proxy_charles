@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <title>Betterbnb Demo</title>
-  </head>
-  <body>
-    <img src="https://s3-us-west-1.amazonaws.com/cloud1314/Screen+Shot+2018-09-20+at+5.29.14+PM.png"> 
-    <div id="container">
-      <div id="gallery"></div>
-      <div id="bookingWrapper">
-        <div id="booking"></div>
-      </div>
-          <div id="description"></div>
-          <div id="reviews"></div>
-      </div>
-    <div id="footer">
-      <img src="https://s3-us-west-1.amazonaws.com/cloud1314/Screen+Shot+2018-09-20+at+5.36.16+PM.png">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <title>Betterbnb Demo</title>
+</head>
+
+<body>
+  <!-- <img src="https://s3-us-west-1.amazonaws.com/cloud1314/Screen+Shot+2018-09-20+at+5.29.14+PM.png"> -->
+  <div id="container">
+    <div id="gallery"></div>
+    <div id="bookingWrapper">
+      <div id="booking"></div>
     </div>
-    <script src="./lib/react.development.js"></script>
-    <script src="./lib/react-dom.development.js"></script>
-    <script src="https://s3-us-west-1.amazonaws.com/cloud1314/fec+bundles/reviewsBundle.js"></script>
+    <div id="description"></div>
+    <div id="reviews"></div>
+  </div>
+  <!-- <div id="footer">
+    <img src="https://s3-us-west-1.amazonaws.com/cloud1314/Screen+Shot+2018-09-20+at+5.36.16+PM.png">
+  </div> -->
+  <script src="./lib/react.development.js"></script>
+  <script src="./lib/react-dom.development.js"></script>
+  <!-- <script src="https://s3-us-west-1.amazonaws.com/cloud1314/fec+bundles/reviewsBundle.js"></script>
    <script src="https://s3-us-west-1.amazonaws.com/cloud1314/fec+bundles/descriptionBundle.js"></script>
-   <script src="http://betterbnb.us-east-2.elasticbeanstalk.com/homes/:id/bundle.js"></script>
-   <script src="https://s3-us-west-1.amazonaws.com/cloud1314/fec+bundles/bookingBundle.js"></script>
-    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
-    <script>
-      /*
-      ************************************************************************************ 
+   <script src="http://betterbnb.us-east-2.elasticbeanstalk.com/homes/:id/bundle.js"></script> -->
 
-      This looks for the pathname and uses regex to match the id in the url.
 
-      ************************************************************************************ 
-       */
+  <!-- <script src="https://s3.amazonaws.com/sdc-project/bundle.js"></script> -->
+  <!-- <script src="https://s3-us-west-1.amazonaws.com/cloud1314/fec+bundles/bookingBundle.js"></script> -->
 
-      let homeId = window.location.pathname.match(/[0-9]+/g)[0];
+  <script src="https://s3.amazonaws.com/sdc-project/bundle.js"></script>
 
-      ReactDOM.render(
-        React.createElement(Gallery, {homeId: homeId}),
-        document.getElementById('gallery')
-      );
-      ReactDOM.render(
-        React.createElement(Description, {homeId: homeId}),
-        document.getElementById('description')
-      );
-      ReactDOM.render(
-        React.createElement(Booking, {homeId: homeId}),
-        document.getElementById('booking')
-      );
-      ReactDOM.render(
-        React.createElement(Reviews, {homeId: homeId}),
-        document.getElementById('reviews')
-      );
-    </script>
-  </body>
+  <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+  <script>
+    /*
+    ************************************************************************************ 
+
+    This looks for the pathname and uses regex to match the id in the url.
+
+    ************************************************************************************ 
+     */
+
+    // let homeId = window.location.pathname.match(/[0-9]+/g)[0];
+
+    // // ReactDOM.render(
+    // //   React.createElement(Gallery, { homeId: homeId }),
+    // //   document.getElementById('gallery')
+    // // );
+    // // ReactDOM.render(
+    // //   React.createElement(Description, { homeId: homeId }),
+    // //   document.getElementById('description')
+    // // );
+    // ReactDOM.render(
+    //   React.createElement(Booking, { homeId: homeId }),
+    //   document.getElementById('booking')
+    // );
+    // ReactDOM.render(
+    //   React.createElement(Reviews, { homeId: homeId }),
+    //   document.getElementById('reviews')
+    // );
+  </script>
+</body>
+
 </html>
